@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" tipe="text/css" href="formulario.css" media="screen">
+    <title>Cadastro</title>
+</head>
+
+<body>
+
+    <div>
+        <h1 id="titulo">Cadastro de DEVs</h1>
+        <p id="subtitulo">Preencha suas informações</p>
+        <br>
+    </div>
+
+    <form>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="nome"><strong>Nome</strong></label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+
+            <div class="campo">
+                <label for="sobrenome"><strong>Sobrenome</strong></label>
+                <input type="text" name="sobrenome" id="sobrenome" required>
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <label for="email"><strong>Email</strong></label>
+            <input type="email" name="email" id="email" required>
+        </div>
+
+        <div class="campo">
+            <label><strong>De qual lado da aplicação você desenvolve?</strong></label>
+            <label>
+                <input type="radio" name="devweb" value="frontend" checked>Front-end
+                <input type="radio" name="devweb" value="backend">Back-end
+                <input type="radio" name="devweb" value="fullstack">Fullstack
+            </label>
+        </div>
+
+        <div class="campo">
+            <label><strong>Está trabalhando atualmente?</strong></label>
+            <label>
+                <input type="radio" name="devjob" value="simdev" checked>Sim, como desenvolvedor
+                <input type="radio" name="devjob" value="simoutro">Sim, outra área
+                <input type="radio" name="devjob" value="nao">Não no momento
+            </label>
+        </div>
+
+        <div class="campo">
+            <label for="senioridade"><strong>Senioridade</strong></label>
+            <select id="senioridade" required>
+                <option selected disabled value="">Selecione</option>
+                <option>Júnior</option>
+                <option>Pleno</option>
+                <option>Sênior</option>
+            </select>
+        </div>
+
+        <div class="campo">
+            <label for="estudos"><strong>Como estão os estudos</strong></label>
+            <select id="estudos" required>
+                <option selected disabled value="">Selecione</option>
+                <option>Cursos gratuitos</option>
+                <option>Cursos pagos</option>
+                <option>Plataforma de cursos online</option>
+                <option>Graduação</option>
+                <option>Pós guaduação</option>
+                <option>Mestrado / Doutorado</option>
+            </select>
+        </div>
+
+        <fieldset class="grupo">
+            <div id="check">
+                <label><strong>Selecione as tecnologias que utiliza:</strong></label><br><br>
+                <input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML">
+                <label for="tecnologia1">HTML</label>
+                <input type="checkbox" id="tecnologia2" name="tecnologia2" value="CSS">
+                <label for="tecnologia2">CSS</label>
+                <input type="checkbox" id="tecnologia3" name="tecnologia3" value="Javascript">
+                <label for="tecnologia3">Javascript</label>
+                <input type="checkbox" id="tecnologia4" name="tecnologia4" value="Python">
+                <label for="Python">Python</label>
+                <input type="checkbox" id="tecnologia5" name="tecnologia5" value="C#">
+                <label for="C#">C#</label>
+                <input type="checkbox" id="tecnologia6" name="tecnologia6" value="PHP">
+                <label for="PHP">PHP</label>
+                <br>
+                <input type="checkbox" id="tecnologia7" name="tecnologia7" value="Java">
+                <label for="Java">Java</label>
+                <input type="checkbox" id="tecnologia8" name="tecnologia8" value=".Net">
+                <label for=".Net">.Net</label>
+                <input type="checkbox" id="tecnologia9" name="tecnologia9" value="NodeJS">
+                <label for="NodeJS">NodeJS</label>
+                <input type="checkbox" id="tecnologia10" name="tecnologia10" value="AngularJS">
+                <label for="AngularJS">AngularJS</label>
+                <input type="checkbox" id="tecnologia11" name="tecnologia11" value="ReactNative">
+                <label for="ReactNative">React Native</label>
+                <input type="checkbox" id="tecnologia12" name="tecnologia12" value="React">
+                <label for="React">React</label>
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <br>
+            <label for="experiencia"><strong>Conte um pouco mais sobre sua experiência:</strong></label>
+            <textarea rows="6" style="width: 26em" id="experiencia" name="experiencia"></textarea>
+        </div>
+
+        <button class="botao" type="submit" onsubmit="">Concluído</button>
+
+    </form>
+
+</body>
+</html>
